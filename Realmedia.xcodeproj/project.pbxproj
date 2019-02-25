@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AABF09CD21F6C8CCBB853911 /* Pods_Realmedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841EFDA15B81A9A1721F0DCB /* Pods_Realmedia.framework */; };
+		FF01F6692221F44700F1D93A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01F6682221F44700F1D93A /* AppDelegate.swift */; };
+		FF01F66B2221F44700F1D93A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01F66A2221F44700F1D93A /* ViewController.swift */; };
+		FF01F66E2221F44700F1D93A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF01F66C2221F44700F1D93A /* Main.storyboard */; };
+		FF01F6712221F44700F1D93A /* Realmedia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF01F66F2221F44700F1D93A /* Realmedia.xcdatamodeld */; };
+		FF01F6732221F44800F1D93A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF01F6722221F44800F1D93A /* Assets.xcassets */; };
+		FF01F6762221F44800F1D93A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF01F6742221F44800F1D93A /* LaunchScreen.storyboard */; };
+		FF01F6812221F4F000F1D93A /* ServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01F6802221F4F000F1D93A /* ServiceApi.swift */; };
+		FF01F6832221F7FB00F1D93A /* PeliculaPopularAndTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01F6822221F7FB00F1D93A /* PeliculaPopularAndTop.swift */; };
+		FF01F6862221F99600F1D93A /* PeliculasPopular.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01F6852221F99600F1D93A /* PeliculasPopular.swift */; };
+		FF01F68A2223723E00F1D93A /* DetallePelicula.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01F6892223723E00F1D93A /* DetallePelicula.swift */; };
+		FF01F68C2223765200F1D93A /* DetallePeliculaModelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01F68B2223765200F1D93A /* DetallePeliculaModelo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3E1E8A4C5344C566F7A6960B /* Pods-Realmedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Realmedia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Realmedia/Pods-Realmedia.release.xcconfig"; sourceTree = "<group>"; };
+		841EFDA15B81A9A1721F0DCB /* Pods_Realmedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Realmedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3266E7DC57E0988961AC1F /* Pods-Realmedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Realmedia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Realmedia/Pods-Realmedia.debug.xcconfig"; sourceTree = "<group>"; };
+		FF01F6652221F44700F1D93A /* Realmedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Realmedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF01F6682221F44700F1D93A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF01F66A2221F44700F1D93A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF01F66D2221F44700F1D93A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF01F6702221F44700F1D93A /* Realmedia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Realmedia.xcdatamodel; sourceTree = "<group>"; };
+		FF01F6722221F44800F1D93A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF01F6752221F44800F1D93A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF01F6772221F44800F1D93A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF01F6802221F4F000F1D93A /* ServiceApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceApi.swift; sourceTree = "<group>"; };
+		FF01F6822221F7FB00F1D93A /* PeliculaPopularAndTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeliculaPopularAndTop.swift; sourceTree = "<group>"; };
+		FF01F6852221F99600F1D93A /* PeliculasPopular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeliculasPopular.swift; sourceTree = "<group>"; };
+		FF01F6892223723E00F1D93A /* DetallePelicula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallePelicula.swift; sourceTree = "<group>"; };
+		FF01F68B2223765200F1D93A /* DetallePeliculaModelo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallePeliculaModelo.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF01F6622221F44700F1D93A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AABF09CD21F6C8CCBB853911 /* Pods_Realmedia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11FDF193C840ECC1B024D544 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB3266E7DC57E0988961AC1F /* Pods-Realmedia.debug.xcconfig */,
+				3E1E8A4C5344C566F7A6960B /* Pods-Realmedia.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8EA0990BE38980EFCB6FF563 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				841EFDA15B81A9A1721F0DCB /* Pods_Realmedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF01F65C2221F44700F1D93A = {
+			isa = PBXGroup;
+			children = (
+				FF01F6672221F44700F1D93A /* Realmedia */,
+				FF01F6662221F44700F1D93A /* Products */,
+				11FDF193C840ECC1B024D544 /* Pods */,
+				8EA0990BE38980EFCB6FF563 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF01F6662221F44700F1D93A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF01F6652221F44700F1D93A /* Realmedia.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF01F6672221F44700F1D93A /* Realmedia */ = {
+			isa = PBXGroup;
+			children = (
+				FF01F6842221F8C800F1D93A /* Vistas */,
+				FF01F67F2221F4E100F1D93A /* Servicio */,
+				FF01F67E2221F4CD00F1D93A /* Controlador */,
+				FF01F67D2221F49D00F1D93A /* Modelo */,
+				FF01F6682221F44700F1D93A /* AppDelegate.swift */,
+				FF01F6722221F44800F1D93A /* Assets.xcassets */,
+				FF01F6772221F44800F1D93A /* Info.plist */,
+				FF01F66F2221F44700F1D93A /* Realmedia.xcdatamodeld */,
+			);
+			path = Realmedia;
+			sourceTree = "<group>";
+		};
+		FF01F67D2221F49D00F1D93A /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				FF01F6822221F7FB00F1D93A /* PeliculaPopularAndTop.swift */,
+				FF01F68B2223765200F1D93A /* DetallePeliculaModelo.swift */,
+			);
+			path = Modelo;
+			sourceTree = "<group>";
+		};
+		FF01F67E2221F4CD00F1D93A /* Controlador */ = {
+			isa = PBXGroup;
+			children = (
+				FF01F66A2221F44700F1D93A /* ViewController.swift */,
+				FF01F6852221F99600F1D93A /* PeliculasPopular.swift */,
+				FF01F6892223723E00F1D93A /* DetallePelicula.swift */,
+			);
+			path = Controlador;
+			sourceTree = "<group>";
+		};
+		FF01F67F2221F4E100F1D93A /* Servicio */ = {
+			isa = PBXGroup;
+			children = (
+				FF01F6802221F4F000F1D93A /* ServiceApi.swift */,
+			);
+			path = Servicio;
+			sourceTree = "<group>";
+		};
+		FF01F6842221F8C800F1D93A /* Vistas */ = {
+			isa = PBXGroup;
+			children = (
+				FF01F66C2221F44700F1D93A /* Main.storyboard */,
+				FF01F6742221F44800F1D93A /* LaunchScreen.storyboard */,
+			);
+			name = Vistas;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF01F6642221F44700F1D93A /* Realmedia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF01F67A2221F44800F1D93A /* Build configuration list for PBXNativeTarget "Realmedia" */;
+			buildPhases = (
+				40BD42F5FA550EA0EEC3488C /* [CP] Check Pods Manifest.lock */,
+				FF01F6612221F44700F1D93A /* Sources */,
+				FF01F6622221F44700F1D93A /* Frameworks */,
+				FF01F6632221F44700F1D93A /* Resources */,
+				D8704F2CF0263CEF4FC49777 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Realmedia;
+			productName = Realmedia;
+			productReference = FF01F6652221F44700F1D93A /* Realmedia.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF01F65D2221F44700F1D93A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Gabriel Soto valenzuela";
+				TargetAttributes = {
+					FF01F6642221F44700F1D93A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = FF01F6602221F44700F1D93A /* Build configuration list for PBXProject "Realmedia" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF01F65C2221F44700F1D93A;
+			productRefGroup = FF01F6662221F44700F1D93A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF01F6642221F44700F1D93A /* Realmedia */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF01F6632221F44700F1D93A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF01F6762221F44800F1D93A /* LaunchScreen.storyboard in Resources */,
+				FF01F6732221F44800F1D93A /* Assets.xcassets in Resources */,
+				FF01F66E2221F44700F1D93A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40BD42F5FA550EA0EEC3488C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Realmedia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8704F2CF0263CEF4FC49777 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Realmedia/Pods-Realmedia-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Realmedia/Pods-Realmedia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF01F6612221F44700F1D93A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF01F6712221F44700F1D93A /* Realmedia.xcdatamodeld in Sources */,
+				FF01F66B2221F44700F1D93A /* ViewController.swift in Sources */,
+				FF01F68C2223765200F1D93A /* DetallePeliculaModelo.swift in Sources */,
+				FF01F6812221F4F000F1D93A /* ServiceApi.swift in Sources */,
+				FF01F6692221F44700F1D93A /* AppDelegate.swift in Sources */,
+				FF01F6862221F99600F1D93A /* PeliculasPopular.swift in Sources */,
+				FF01F68A2223723E00F1D93A /* DetallePelicula.swift in Sources */,
+				FF01F6832221F7FB00F1D93A /* PeliculaPopularAndTop.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF01F66C2221F44700F1D93A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF01F66D2221F44700F1D93A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF01F6742221F44800F1D93A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF01F6752221F44800F1D93A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF01F6782221F44800F1D93A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF01F6792221F44800F1D93A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF01F67B2221F44800F1D93A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB3266E7DC57E0988961AC1F /* Pods-Realmedia.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DLC9263695;
+				INFOPLIST_FILE = Realmedia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabriel.Realmedia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF01F67C2221F44800F1D93A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E1E8A4C5344C566F7A6960B /* Pods-Realmedia.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DLC9263695;
+				INFOPLIST_FILE = Realmedia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabriel.Realmedia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF01F6602221F44700F1D93A /* Build configuration list for PBXProject "Realmedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF01F6782221F44800F1D93A /* Debug */,
+				FF01F6792221F44800F1D93A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF01F67A2221F44800F1D93A /* Build configuration list for PBXNativeTarget "Realmedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF01F67B2221F44800F1D93A /* Debug */,
+				FF01F67C2221F44800F1D93A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FF01F66F2221F44700F1D93A /* Realmedia.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FF01F6702221F44700F1D93A /* Realmedia.xcdatamodel */,
+			);
+			currentVersion = FF01F6702221F44700F1D93A /* Realmedia.xcdatamodel */;
+			path = Realmedia.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FF01F65D2221F44700F1D93A /* Project object */;
+}

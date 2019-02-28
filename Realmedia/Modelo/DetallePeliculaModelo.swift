@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import UIKit
 
 struct DetallePeliculaModelo
 {
@@ -15,10 +14,5 @@ struct DetallePeliculaModelo
     var page: Int16
     var total_results: Int16
     var total_pages: Int16
-    
-    //    "page": 1,
-    //    "total_results": 19832,
-    //    "total_pages": 992,
-    //    "results": [
     
 }

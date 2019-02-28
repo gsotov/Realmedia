@@ -7,43 +7,54 @@
 //
 
 import Foundation
-import UIKit
 
 struct PeliculaPopularAndTop
 {
-    
-    let results: [[String:AnyObject]]?
+    let Resultado: [[String:AnyObject]]?
     
     var original_title: String = ""
+    var title: String = ""
+    var poster_path: String = ""
+    var overview: String = ""
     
-    static var original_Title: [String] = []
+    static var arrayOriginal_Title: [String] = []
+    static var arraytitle: [String] = []
+    static var arrayPoster_Path: [String] = []
+    static var arrayOverview: [String] = []
     
     init(dictionary: [String:AnyObject])
     {
-        
-        results = dictionary["results"] as? [[String:AnyObject]]
-        
-        if let Results = results
+
+        Resultado = dictionary["results"] as? [[String:AnyObject]]
+
+        if let Results = Resultado
         {
             for data in Results
             {
                 original_title = data ["original_title"] as! String
+                title = data ["title"] as! String
+                poster_path = data ["poster_path"] as! String
+                overview = data ["overview"] as! String
                 
-                PeliculaPopularAndTop.original_Title.append(original_title)
+                PeliculaPopularAndTop.arrayOriginal_Title.append(original_title)
+                PeliculaPopularAndTop.arraytitle.append(title)
+                PeliculaPopularAndTop.arrayPoster_Path.append(poster_path)
+                PeliculaPopularAndTop.arrayOverview.append(overview)
             
             }
         }
     }
     
-    static func getPeliculas(_ messageResultado: [[String:AnyObject]]) -> [PeliculaPopularAndTop]
+    static func getPeliculas(_ peliculaResultado: [[String : AnyObject]]) -> [PeliculaPopularAndTop]
     {
-        var mensajeInst = [PeliculaPopularAndTop]()
+        debugPrint("EN :: getPeliculas")
+        var peliculas = [PeliculaPopularAndTop]()
         //obtiene los datos y lo va almacenando en el diccionario
-        for mensaje in messageResultado
+        for peli in peliculaResultado
         {
-            mensajeInst.append(PeliculaPopularAndTop(dictionary: mensaje))
+            peliculas.append(PeliculaPopularAndTop(dictionary: peli))
         }
-        return mensajeInst
+        return peliculas
     }
     
 }

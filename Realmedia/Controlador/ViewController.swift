@@ -9,8 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
+    @IBOutlet weak var tabla: UITableView!
     
-    //var arrayPelicula: [PeliculaPopularAndTop]()
+    var arrayPelicula = [PeliculaPopularAndTop]()
     
     override func viewDidLoad()
     {
@@ -23,11 +24,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             DispatchQueue.main.async {
                 if (success)
                 {
-                    if let pelicula = peliculaPopular{
-                        //self.arrayPelicula = pelicula
-                        //self.tablePeliculaPopular.reloadData()
+                    if let pelicula = peliculaPopular
+                    {
+                        self.arrayPelicula = pelicula
+                        self.tabla.reloadData()
                     }
-                    print("obtiene el json()")
                 }
             }
         }
@@ -35,7 +36,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return 1 //arrayPelicula.count
+        return arrayPelicula.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell

@@ -47,9 +47,8 @@ struct PeliculaPopularAndTop
     
     static func getPeliculas(_ peliculaResultado: [[String : AnyObject]]) -> [PeliculaPopularAndTop]
     {
-        debugPrint("EN :: getPeliculas")
         var peliculas = [PeliculaPopularAndTop]()
-        //obtiene los datos y lo va almacenando en el diccionario
+       
         for peli in peliculaResultado
         {
             peliculas.append(PeliculaPopularAndTop(dictionary: peli))

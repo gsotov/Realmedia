@@ -133,28 +133,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="117.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f7E-MP-tdT">
-                                                    <rect key="frame" x="15" y="11" width="103" height="88"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="103" id="3mv-Aj-C9e"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GST-rh-QUV">
-                                                    <rect key="frame" x="126" y="11" width="216" height="88"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g13-5C-G8v">
+                                                    <rect key="frame" x="157" y="48" width="185" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cnc-lo-qAl">
+                                                    <rect key="frame" x="15" y="11" width="134" height="96"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="GST-rh-QUV" secondAttribute="trailing" id="M7N-6W-s2I"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="f7E-MP-tdT" secondAttribute="bottom" constant="8" id="WA9-Xa-XFv"/>
-                                                <constraint firstItem="f7E-MP-tdT" firstAttribute="bottom" secondItem="GST-rh-QUV" secondAttribute="bottom" id="Xa0-nc-tMY"/>
-                                                <constraint firstItem="f7E-MP-tdT" firstAttribute="top" secondItem="GST-rh-QUV" secondAttribute="top" id="Xy4-1j-Q8q"/>
-                                                <constraint firstItem="f7E-MP-tdT" firstAttribute="top" secondItem="7QV-Xh-6ZP" secondAttribute="topMargin" constant="-9" id="ecO-NE-jwf"/>
-                                                <constraint firstItem="GST-rh-QUV" firstAttribute="leading" secondItem="f7E-MP-tdT" secondAttribute="trailing" constant="8" symbolic="YES" id="j8u-8b-RLM"/>
-                                                <constraint firstItem="f7E-MP-tdT" firstAttribute="leading" secondItem="7QV-Xh-6ZP" secondAttribute="leadingMargin" constant="-1" id="sHL-Dt-2au"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -171,6 +161,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Películas Top Rated" id="EWG-YR-Efq"/>
                     <connections>
+                        <outlet property="tabla" destination="8zS-Vy-zWi" id="J7N-ac-MoD"/>
                         <segue destination="zCF-Gc-Sb1" kind="show" id="khc-m0-9eH"/>
                     </connections>
                 </viewController>

@@ -15,10 +15,11 @@
 		FF01F6732221F44800F1D93A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF01F6722221F44800F1D93A /* Assets.xcassets */; };
 		FF01F6762221F44800F1D93A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF01F6742221F44800F1D93A /* LaunchScreen.storyboard */; };
 		FF01F6812221F4F000F1D93A /* ServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01F6802221F4F000F1D93A /* ServiceApi.swift */; };
-		FF01F6832221F7FB00F1D93A /* PeliculaPopularAndTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01F6822221F7FB00F1D93A /* PeliculaPopularAndTop.swift */; };
+		FF01F6832221F7FB00F1D93A /* PeliculaPopular.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01F6822221F7FB00F1D93A /* PeliculaPopular.swift */; };
 		FF01F6862221F99600F1D93A /* PeliculasPopular.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01F6852221F99600F1D93A /* PeliculasPopular.swift */; };
 		FF01F68A2223723E00F1D93A /* DetallePelicula.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01F6892223723E00F1D93A /* DetallePelicula.swift */; };
-		FF01F68C2223765200F1D93A /* DetallePeliculaModelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01F68B2223765200F1D93A /* DetallePeliculaModelo.swift */; };
+		FFD0F1142228A3B20012CB8B /* PeliculaTopRader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD0F1132228A3B20012CB8B /* PeliculaTopRader.swift */; };
+		FFD0F1162228B9CD0012CB8B /* DetalleImagen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD0F1152228B9CD0012CB8B /* DetalleImagen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,10 +35,11 @@
 		FF01F6752221F44800F1D93A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF01F6772221F44800F1D93A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF01F6802221F4F000F1D93A /* ServiceApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceApi.swift; sourceTree = "<group>"; };
-		FF01F6822221F7FB00F1D93A /* PeliculaPopularAndTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeliculaPopularAndTop.swift; sourceTree = "<group>"; };
+		FF01F6822221F7FB00F1D93A /* PeliculaPopular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeliculaPopular.swift; sourceTree = "<group>"; };
 		FF01F6852221F99600F1D93A /* PeliculasPopular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeliculasPopular.swift; sourceTree = "<group>"; };
 		FF01F6892223723E00F1D93A /* DetallePelicula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallePelicula.swift; sourceTree = "<group>"; };
-		FF01F68B2223765200F1D93A /* DetallePeliculaModelo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallePeliculaModelo.swift; sourceTree = "<group>"; };
+		FFD0F1132228A3B20012CB8B /* PeliculaTopRader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeliculaTopRader.swift; sourceTree = "<group>"; };
+		FFD0F1152228B9CD0012CB8B /* DetalleImagen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleImagen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +107,9 @@
 		FF01F67D2221F49D00F1D93A /* Modelo */ = {
 			isa = PBXGroup;
 			children = (
-				FF01F6822221F7FB00F1D93A /* PeliculaPopularAndTop.swift */,
-				FF01F68B2223765200F1D93A /* DetallePeliculaModelo.swift */,
+				FF01F6822221F7FB00F1D93A /* PeliculaPopular.swift */,
+				FFD0F1132228A3B20012CB8B /* PeliculaTopRader.swift */,
+				FFD0F1152228B9CD0012CB8B /* DetalleImagen.swift */,
 			);
 			path = Modelo;
 			sourceTree = "<group>";
@@ -261,13 +264,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF01F6712221F44700F1D93A /* Realmedia.xcdatamodeld in Sources */,
+				FFD0F1162228B9CD0012CB8B /* DetalleImagen.swift in Sources */,
+				FFD0F1142228A3B20012CB8B /* PeliculaTopRader.swift in Sources */,
 				FF01F66B2221F44700F1D93A /* ViewController.swift in Sources */,
-				FF01F68C2223765200F1D93A /* DetallePeliculaModelo.swift in Sources */,
 				FF01F6812221F4F000F1D93A /* ServiceApi.swift in Sources */,
 				FF01F6692221F44700F1D93A /* AppDelegate.swift in Sources */,
 				FF01F6862221F99600F1D93A /* PeliculasPopular.swift in Sources */,
 				FF01F68A2223723E00F1D93A /* DetallePelicula.swift in Sources */,
-				FF01F6832221F7FB00F1D93A /* PeliculaPopularAndTop.swift in Sources */,
+				FF01F6832221F7FB00F1D93A /* PeliculaPopular.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

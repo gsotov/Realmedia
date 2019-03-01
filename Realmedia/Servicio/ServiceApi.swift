@@ -15,64 +15,54 @@ class ServicioApi : NSObject
 {
     
     //Clase que consume api de peliculas ordenadas por polular
-    static func getPeliculasOrdenadasPopular(_ completionHandlerForMessageObject: @escaping ( _ success: Bool, _ peliculaPopular: [PeliculaPopularAndTop]?, _  errorString: String?) -> Void){
+    class func getPeliculasOrdenadasPopular(completion: @escaping (_ peliculaPopular: [PeliculaPopular]?) -> ()){
         let url = "https://api.themoviedb.org/3/movie/popular?api_key=34738023d27013e6d1b995443764da44"
         
         Alamofire.request(url).responseJSON
         {
             response in
-                if let json = response.result.value
-                {
-                    debugPrint("json:: getPeliculasOrdenadasPopular ", json)
-                    let parseJson = JSON(json)
-                    debugPrint("JSON", parseJson)
-                    let resultPeliculas = PeliculaPopularAndTop.getPeliculas(json as! [[String : AnyObject]])
-                    completionHandlerForMessageObject(true, resultPeliculas, nil)
-                    
-                    
+            
+            let peliculaPopular: NSMutableArray = []
+            switch response.result{
+            case .failure( _):
+                if let data = response.data{
+                    print("Server error  " + String(data: data, encoding: String.Encoding.utf8)!)
                 }
+                completion(nil)
+                
+            case .success(let value):
+                let json = JSON(value)
+                
+                for current in JSON(json)["results"].arrayValue{
+                    peliculaPopular.add(PeliculaPopular(dictionary: (current.dictionaryObject! as NSDictionary) as! [String:AnyObject]))
+                }
+                completion(peliculaPopular as NSArray as? [PeliculaPopular])
+            }
             
         }
     }
     
     //Clase que consume api de peliculas ordenadas películas por top rated
-    static func getPeliculasOrdenadasTopRated(_ completionHandlerForMessageObject: @escaping ( _ success: Bool, _ peliculaTopRated: [PeliculaPopularAndTop]?, _  errorString: String?) -> Void){
+    class func getPeliculasOrdenadasTopRated(completion: @escaping (_ peliculaTop: [PeliculaTopRader]?) -> ()){
         let url = "https://api.themoviedb.org/3/movie/top_rated?api_key=34738023d27013e6d1b995443764da44"
         
         Alamofire.request(url).responseJSON { response in
-            if let json = response.result.value{
-                print("json:: getPeliculasOrdenadasTopRated \(json)")
-                let parseJson = JSON(json)
-                debugPrint("JSON", parseJson)
-                let resultPeliculas = PeliculaPopularAndTop.getPeliculas(json as! [[String:AnyObject]])
-                completionHandlerForMessageObject(true, resultPeliculas, nil)
-            }
-        }
-    }
-    
-    //Clase que consume api obtiene detalle de peliculas
-    static func getDetallePelicula(poster_path:String, _ completionHandlerForMessageObject: @escaping ( _ success: Bool, _ detallePelicula: [DetallePeliculaModelo]?, _  errorString: String?) -> Void){
-        let url = "http://image.tmdb.org/t/p/w500"
-        
-        Alamofire.request(url + poster_path).responseJSON { response in
-            if let json = response.result.value{
-                print("json:: getDetallePelicula \(json)")
+            let peliculaTop: NSMutableArray = []
+            switch response.result{
+            case .failure( _):
+                if let data = response.data{
+                    print("Server error  " + String(data: data, encoding: String.Encoding.utf8)!)
+                }
+                completion(nil)
                 
+            case .success(let value):
+                let json = JSON(value)
                 
+                for current in JSON(json)["results"].arrayValue{
+                    peliculaTop.add(PeliculaTopRader(dictionary: (current.dictionaryObject! as NSDictionary) as! [String:AnyObject]))
+                }
+                completion(peliculaTop as NSArray as? [PeliculaTopRader])
             }
-        }
-    }
-    
-    
-    struct PeliculasPopular_JsonObject
-    {
-        struct  JsonResponseKeys
-        {
-            static let original_title = "original_title"
-            static let title = "title"
-            static let poster_path = "poster_path"
-            static let overview = "overview"
-
         }
     }
 }
